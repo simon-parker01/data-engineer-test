@@ -1,0 +1,6 @@
+FROM "pqgf_parquet" pq
+INNER JOIN (
+  Select max(screentemperature) max_temp
+  FROM "pqgf_parquet"
+  ) tt
+ON pq.screentemperature = tt.max_temp
