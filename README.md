@@ -9,7 +9,7 @@ This project takes weather data in a CSV format and transforms it into parquet s
   * It also contains the data in CSV and parquet format
 
 * ##  Glue
- * This folder contains an AWS glue script that performs an ETL. Taking the data from  CSV files in one s3 bucket and writing it to another as  a parquet file
+ * This folder contains an AWS glue ETL script (including tests). Taking the data from  CSV files in one s3 bucket and writing it to another as  a parquet file
  * ### Athena
    * Contains an athena query to answer the question "When and where was the hotteset day"
  
